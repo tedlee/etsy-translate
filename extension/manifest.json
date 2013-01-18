@@ -1,0 +1,20 @@
+{
+  "name": "Etsy Translate — Etsy in your language",
+  "version": "0.3.14159",
+  "description": "Let's you view Etsy product descriptions in your language — automagically! ",
+
+  "permissions": [
+    "http://etsy.com/listing/*", "http://localhost:9293/*", "http://langsy.herokuapp.com/*"
+  ],
+
+  "browser_action": {
+    "name": "Etsy Translate",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [{
+    "js": ["jquery.js", "main.js"],
+    "css": ["style.css"],
+    "matches": ["*://*.etsy.com/listing/*"]
+  }],
+  "manifest_version": 2
+}

@@ -1,0 +1,14 @@
+/* Styling for Translation Box */
+
+.translate {
+	background-color: #6cd4ff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 10px;
+}
+
+.translate a:link{
+	color: black;
+	text-decoration:underline;
+}
